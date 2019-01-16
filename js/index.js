@@ -26,3 +26,10 @@ function includeHTML() { //Thanks w3!
     }
   }
 };
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
