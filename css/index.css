@@ -2,7 +2,9 @@
 .header {
   overflow: hidden;
   background-color: #fdfd96;
-  top: 0px;
+  top: 0%;
+  left: 0%;
+  right: 0%;
   width: 100%;
   padding: 20px, 10px;
   position: fixed;
@@ -13,7 +15,7 @@
   float: left;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 20px;
   text-decoration: none;
   font-family: 'Schoolbell', cursive;
   font-size: 18px; 
