@@ -34,7 +34,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://gm1.ggpht.com/TfFXMi8g9HYrOjt7gf9CF4Gs-eLwltq0ICOWFx8WQpABNbB4Jf8SwxPYjD4niQZRTmQmTmUh8sXYjBDh_UO9AsqWExx2kB2rG7VT28k1tZCDtzW5qw0JQICz5XwtDK3SrEALtd5xM2etj4Ed_OT9__mwBuiHcSVZBjnWgjjOhKkerbMPbYhSEMHW0qxSPwCXjsvwzemCZ9OgFJydwOUF7V9GOuVjLEDYqJrWO4CYOKxTvn8JtA7rYYMllT8mEW_t4b4BwMCBtGWI1LdyGP6q113Em7egvt9WhzCXOsUBQlhk12Avnok8sFv9aux6b_zl3UPbCFc9bdCrV5LstO6J63_Wt-S4Fg_eeI4SpkXNEQ9qw6sxc0bIiGw7qKOqYhaFOTZyyrU2mRNFQgQGBTk0CFhT5iGACRUaP2UX9h4Ce_-NEQYym3UNuAJb7W48t_pXE2bXKmDhKUZrI9pMLYKzvuFvtylLJwG66qWGX2ISTDiGlGJS5uGaaTrDEIvf-lbjJbVBv-u0GelyoPHELeg23RhkuFyxUNvNeEZNOLpxjuaJ7zkPAV2chBIJrfbGuFkDlQ9v7m3aaEqMLe2PH_EKw4R2VId3ndqYseNDWJi5LMgnBQGXtr0l7Hc9xfTBuAiJsHfk5VwhjbRn6jXTXDXuo8IxMAR4yDcO3ycvaev3Tmgysg2JiDOX4XAjgQTPV_s2mFo85PBuYofm4GgIsAq1tE-umUph4HUOUBVrMtBO9SFJfSFghAn8nKh8NvAONqUH=s0-l75-ft-l75-ft");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("file:///C:/Users/25glo/OneDrive/Desktop/unnamed.png");
 
   /* Set a specific height */
   height: 50%;
