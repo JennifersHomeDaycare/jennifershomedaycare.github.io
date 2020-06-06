@@ -1,502 +1,250 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-.container {
-  position: relative;
-  width: 50%;
-}
-
-/* The alert message box */
-.alert {
-  padding: 20px;
-  background-color: #0ba0db; /* blue */
-  color: white;
-  margin-bottom: 15px;
-}
-
-/* The close button */
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: black;
-}
-
-/* Make the image responsive */
-.container img {
-  width: 100%;
-  height: auto;
-}
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+/* css for all properties */
+html, body {
+  top: 0;
+  bottom: 0;
   left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5px auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  /* Position it in the top right corner outside of the modal */
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-/* Close button on hover */
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-}
-
-/* Style the button and place it in the middle of the container/image */
-.container .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #275dff;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.container .btn:hover {
-  background-color: #7496ff;
-}
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 2000px;
-  position: relative;
-  margin: none;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  img {vertical-align: middle;}
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  background-color: #f5f5f5;
+  color: #000000;
+  font-family: 'Prata', serif;
+  /* min-height: 100%; */
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
 }
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: white;
-  font-size: 12px;
-  padding: 8px 12px;
+.right{
+  width: 100%;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  right: 0%;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+* {
+  box-sizing: border-box;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.bg-image {
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+/* Images used */
+.img1 { background-image: url("/images/dontmindthemesspaintingcopy.PNG"); }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
+.button {
+  background-color: transparent; /* Green */
+  border: 50%;
   color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
+  padding: 16px 32px;
+  text-align: right;
   text-decoration: none;
-  font-size: 22px;
-  color: black;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 10%;
+  cursor: pointer;
 }
 
-button:hover, a:hover {
+.button1 {
+  background-color: transparent;
+  color: white;
+  position: relative;
+}
+.button1:hover {
+  background-color: transparent;
+  color: white;
+  /*border: 2px solid white;*/
+}
+h1 {
+  font-family: 'Prata', serif;
+  font-size: 48px;
+}
+.main {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+  color: black;
+  letter-spacing: 3px;
+  /* padding-top: 22%; */
+}
+/* Stuff that needs to be center */
+.center {
+  text-align: center;
+}
+
+footer{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 5%;
+  line-height: 110%;
+}
+
+/* there's a column for the body as well like in the footer */
+  .column {
+  float: left;
+  width: 40%;
+  padding: 50px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  text-align: center;
+}
+img.resize{
+  max-width: 50%
+  max-height: 50%;
+}
+.column a {
+  color: white;
+}
+/* properties for the about text paragraph on the front page */
+p {
+  line-height: 1.2em !important;
+  color: white;
+  font-family: 'ZCOOL QingKe HuangYou';
+  /*background: rgba(0, 0, 0, 0.5);*/
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+/*  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+*/
+hr {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Custom Font sizes, helps with moble viwing */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
   opacity: 0.7;
 }
-/*div*/
-.div {
-  width: 320px;
-  padding: 10px;
-  border: 5px solid gray;
-  margin: 0;
-}
-/* for sponsor.html */
 
-.sponsor {
+.fa-twitter {
+  background: #9fabaf;
+  color: white;
+}
+
+.fa-instagram {
+  background: #9fabaf;
+  color: white;
+}
+
+table.scroll {
+    width: 100%;
+    border-spacing: 0;
+    border: 2px solid white;
+}
+
+table.scroll tbody,
+table.scroll thead { display: block; }
+
+thead tr th {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
     text-align: left;
 }
 
-.sponsor p {
-    padding-left: 5%;
-    color: white;;
+table.scroll tbody {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.sponsor li {
-    padding-left: 18%;
-    color: white;;
-    list-style-type: none;
+tbody { border-top: 2px solid white; }
+
+tbody td, thead th {
+    width: 0%;
+    border-right: 1px solid white;
+    /* white-space: nowrap; */
 }
 
-.sponsor h2 {
-    color: white;;
+tbody td:last-child, thead th:last-child {
+    border-right: none;
 }
-
-
-/* This is the navbar stuff */
-/* Dropdown Button */
-.dropbtn {
-  background-color: #333333;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #111111;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 3;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.wholenav{
-    background color: #333333;
-    color: white;
-}
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #111111}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-.show {
-  display: block;
-}
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-.navbar li {
-    float: left;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.navbar li a:hover {
-    background-color: #111111;
-}
-/* This is the E-Ville Empire part at the very top of the page */
-
-.main {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-align: center;
-    /*background-color: #2bb5dc; */
-    color: white;
-    letter-spacing: 3px;
-}
-
-
-/* Stuff that needs to be center */
-
-.center {
-    text-align: center;
-}
-
-
-/* Footer Stuff. The links at the bottom of the page */
-
-footer {
-    list-style-type: none;
-    font-size: 80%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    background-color: #1d1d1d;
-    margin-top: 4%;
-    line-height: 110%;
-}
-
-
-/* Theres colums so that you can have text different text on the same line */
-
-.footerColumn {
-/*     float: left; */
-    width: 33%;
-    padding: 5px;
-}
-
-.footerColumn a {
-    color: white;
-}
-
-
-/* a p {
-  color: #1d1d1d;
-} */
-
-
-/* for the footer text */
-
-.footerText {
-    color: white;
-    padding-right: 10%;
-}
-
-
-/* makes pretty buttons */
-body, html {
-    height: 100%;
-}
-
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("file:///C:/Users/25glo/OneDrive/Desktop/unnamed.png");
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-/* Place text in the middle of the image */
-body {
-    height: 125vh;
-    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
-    background-size: cover;
-    font-family: sans-serif;
-    margin-top: 80px;
-    padding: 30px;
-}
-
-main {
-    color: white;
-}
-
-header {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 25px 0 black;
-}
-
-header * {
-    display: inline;
-}
-
-header li {
-    margin: 20px;
-}
-
-header li a {
-    color: black;
-    text-decoration: none;
-}
-}
-.lispace {
-    margin: 10px 0;
-}
-
-"
- .lismallspace {
-    margin: 0.5px 0;
-}
-
-a {
-    color: #1d1d1d;
-}
-
-
-/* there's a column for the body as well like in the footer */
-
-.column {
-    float: left;
-    width: 40%;
-    padding: 50px;
-}
-
-
-/* Clearfix (clear floats) */
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-    text-align: center;
-}
-
-img.resize {
-    max-width: 50% max-height: 50%;
-}
-
-.column a {
-    color: white;
-}
-
-
-/* Awards Right Side */
